@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>product page</title>
+</head>
+<body>
+<h4 style="text-align:center;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Add Product Here</b></h4>
+    <center><fieldset style="width: 400px ; height: 800px">
+    <form action="/a1/addproduct/" method="post" style="width:500px" class="jumbotron">
+        {% csrf_token %}
+
+        {{ form|crispy }}
+
+    <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3 style="text-align:center"><b>All Posts</b></h3>
+    <table border="1" cellpadding="8" class="table table-dark table-striped">
+        <tr>
+
+            <td> product_name </td>
+            <td>date_added</td>
+            <td>merchant</td>
+        </tr>
+        {% for Product in productlist %}
+        <tr>
+            <td>{{Product.product_name}}</td>
+            <td>{{Product.date_added}}</td>
+            <td>{{Product.merchant}}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
